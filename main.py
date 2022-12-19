@@ -206,7 +206,7 @@ def send_text(message):
 
         keyboard = telebot.types.ReplyKeyboardMarkup(True)
         keyboard.row('ðŸš« Cancel')
-        send = bot.send_message(message.chat.id, "_âš ï¸Send your TRX Wallet Address._",
+        send = bot.send_message(message.chat.id, "_âš ï¸Send your paytm Wallet Address._",
                                 parse_mode="Markdown", reply_markup=keyboard)
         # Next message will call the name_handler function
         bot.register_next_step_handler(message, trx_address)
